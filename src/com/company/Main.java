@@ -7,7 +7,9 @@ class Main {
         // new Thread(() -> run("MyThread 1.")).start();
         // new Thread(() -> run("MyThread 2.")).start();
 
-        MyPalindrome.test();
+        // MyPalindrome.test();
+
+        Shellsort.test();
     }
 
     private static void run(String str) {
