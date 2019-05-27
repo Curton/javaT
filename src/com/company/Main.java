@@ -9,7 +9,18 @@ class Main {
 
         // MyPalindrome.test();
 
-        Shellsort.test();
+        // Shellsort.test();
+
+        // The default integer type in Java is int
+        // System.out.println(Integer.MAX_VALUE + 1);
+
+        // test Max
+        /*
+        int a = 7, b = 5, c = 3;
+        int max = Max.getMax(a, b, c);
+        System.out.println(max);
+        */
+
     }
 
     private static void run(String str) {
