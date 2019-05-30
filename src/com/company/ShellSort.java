@@ -1,9 +1,8 @@
 package com.company;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Shellsort {
+public class ShellSort {
 
     public static void sort(int[] array) {
         sortAsc(array);
