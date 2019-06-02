@@ -2,6 +2,9 @@ package com.company;
 
 import java.util.Arrays;
 
+/**
+ * @author covey
+ */
 public class ShellSort {
 
     public static void sort(int[] array) {
@@ -46,10 +49,6 @@ public class ShellSort {
         }
     }
 
-    public static void add(int i){
-        i += 1;
-    }
-
     public static void test() {
 
         int[] array = new int[] {5, 7, 2, 3, 9, 8, 0, 4, 1, 6};
@@ -59,8 +58,6 @@ public class ShellSort {
         System.out.println("After shellsort : " + Arrays.toString(array));
         sortDes(array);
         System.out.println("After shellsort : " + Arrays.toString(array));
-        int i = 1;
-        add(1);
-        System.out.println(i);
+
     }
 }

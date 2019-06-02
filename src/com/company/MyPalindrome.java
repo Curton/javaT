@@ -26,9 +26,10 @@ class MyPalindrome {
     }
 
     public static void test() {
-        for (int m = 0; m < 1000000; m++)
+        for (int m = 0; m < 1000000; m++) {
             if (check(String.valueOf(m))) {
                 System.out.println(m);
             }
+        }
     }
 }
