@@ -72,9 +72,34 @@ class Main {
         System.out.println(intA[49]);
         */
 
-        System.out.println(Arrays.toString(Primes.getPrimes(1000)));
+        /*
+            // java runtime
+            System.out.println(Arrays.toString(Primes.getPrimes(9)));
+            Runtime run = Runtime.getRuntime();
+            System.out.println(run.availableProcessors());
+            System.out.println(run.freeMemory() / 1024 / 1024 + " MB");
+            System.out.println(run.maxMemory() / 1024 / 1024 + " MB");
+            System.out.println(run.totalMemory() / 1024 / 1024 + " MB");
+         */
+
+
 
         // System.out.println(Arrays.toString(Primes.Primes(100000)));
+        // System.out.println(getType(1));
+        MyThread0 myThread0 = new MyThread0();
+        new Thread(myThread0).start();
+        new Thread(myThread0).start();
+        new Thread(myThread0).start();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("xxx : " + ((MyThread0) myThread0).getCount());
+        //System.out.println("yyy : " + ((MyThread0) myThread0).getRunCount());
+
+
 
 
 
