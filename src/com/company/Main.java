@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.concurrent.ExecutionException;
 
 class Main {
 
@@ -86,21 +87,29 @@ class Main {
 
         // System.out.println(Arrays.toString(Primes.Primes(100000)));
         // System.out.println(getType(1));
-        MyThread0 myThread0 = new MyThread0();
-        new Thread(myThread0).start();
-        new Thread(myThread0).start();
-        new Thread(myThread0).start();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("xxx : " + ((MyThread0) myThread0).getCount());
+//        MyThread0 myThread0 = new MyThread0();
+//        new Thread(myThread0).start();
+//        new Thread(myThread0).start();
+//        new Thread(myThread0).start();
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        System.out.println("xxx : " + ((MyThread0) myThread0).getCount());
         //System.out.println("yyy : " + ((MyThread0) myThread0).getRunCount());
 
-
-
+        CompletableFutureTest completableFutureTest = CompletableFutureTest.getInstance();
+        completableFutureTest.run();
+        System.out.println("from main thread");
+        try {
+            System.out.println(completableFutureTest.run().get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
 
 
     }

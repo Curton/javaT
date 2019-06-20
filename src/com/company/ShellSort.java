@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * @author covey
  */
+
 public class ShellSort {
 
     public static void sort(int[] array) {

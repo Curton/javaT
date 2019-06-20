@@ -34,7 +34,7 @@ public class Primes {
                 }
 
             }
-            // move to next number
+            // move to the next number
             nextCheckValue++;
         }
 
