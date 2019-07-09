@@ -100,16 +100,19 @@ class Main {
 //        System.out.println("xxx : " + ((MyThread0) myThread0).getCount());
         //System.out.println("yyy : " + ((MyThread0) myThread0).getRunCount());
 
-        CompletableFutureTest completableFutureTest = CompletableFutureTest.getInstance();
-        completableFutureTest.run();
-        System.out.println("from main thread");
-        try {
-            System.out.println(completableFutureTest.run().get());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
+//        CompletableFutureTest completableFutureTest = CompletableFutureTest.getInstance();
+//        completableFutureTest.run();
+//        System.out.println("from main thread");
+//        try {
+//            System.out.println(completableFutureTest.run().get());
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        } catch (ExecutionException e) {
+//            e.printStackTrace();
+//        }
+
+        CodeBlockTest codeBlockTest = new CodeBlockTest();
+        CodeBlockTest codeBlockTest2 = new CodeBlockTest();
 
 
     }
